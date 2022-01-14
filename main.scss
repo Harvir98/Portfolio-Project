@@ -1,3 +1,8 @@
+// Colors
+
+$primary-color: white;
+$secondary-color: #A9D0C9;
+
 * {
   padding: 0px;
   margin: 0px;
@@ -6,6 +11,8 @@
 .nav {
     display: flex;
     justify-content: flex-end;
+    position: absolute;
+    right: 25px;
 
     &__navlist {
       display: none;
@@ -13,5 +20,13 @@
 }
 
 .fa-bars{
-  margin: 20px;
+  margin-top: 20px;
+  font-size: 40px;
 }
+
+.main {
+  &__backgroundimage {
+    width: 100vw;
+  }
+}
+
