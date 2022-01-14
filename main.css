@@ -2,3 +2,15 @@
   padding: 0px;
   margin: 0px;
 }
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__navlist {
+  display: none;
+}
+
+.fa-bars {
+  margin: 20px;
+}
