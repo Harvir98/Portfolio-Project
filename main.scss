@@ -1,32 +1,89 @@
+   
 // Colors
 
 $primary-color: white;
 $secondary-color: #A9D0C9;
+
+// Font
+
+$priamry-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+
 
 * {
   padding: 0px;
   margin: 0px;
 }
 
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    right: 25px;
-
-    &__navlist {
-      display: none;
-    }
-}
-
-.fa-bars{
-  margin-top: 20px;
-  font-size: 40px;
-}
-
 .main {
+  position: relative;
+
   &__backgroundimage {
-    width: 100vw;
+    position: absolute;
+    height: auto;
+    width: 100%;
+  }
+
+  &__name {
+    position: absolute;
+    font-size: 45px;
+    right: 50px;
+    top: 200px;
+    font-weight: bold;
+    font-family: $priamry-font;
+  }
+
+  &__TS {
+    position: absolute;
+    font-size: 45px;
+    right: 50px;
+    top: 260px;
+    font-weight: bold;
+    font-family: $priamry-font;
+  }
+
+  &__developer {
+    position: absolute;
+    font-size: 45px;
+    right: 50px;
+    top: 320px;
+    font-weight: bold;
+    font-family: $priamry-font;
+  }
+
+  &__fa-bars {
+    position: absolute;
+    font-size: 100px;
   }
 }
 
+
+
+// Old layout - revert back if new method dont work
+// .nav {
+//     display: flex;
+//     justify-content: flex-end;
+//     position: absolute;
+//     right: 25px;
+
+//     &__navlist {
+//       display: none;
+//     }
+// }
+
+// .fa-bars{
+//   margin-top: 20px;
+//   font-size: 40px;
+// }
+
+// .main {
+//   &__backgroundimage {
+//     width: 100%;
+//     height: auto;
+//   }
+
+//   &__name {
+//     position: absolute;
+//   }
+// }
