@@ -13,7 +13,7 @@
 .main__name {
   position: absolute;
   font-size: 45px;
-  right: 45px;
+  right: 40px;
   top: 170px;
   font-weight: bold;
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -22,7 +22,7 @@
 .main__TS {
   position: absolute;
   font-size: 45px;
-  right: 45px;
+  right: 40px;
   top: 220px;
   font-weight: bold;
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -30,7 +30,7 @@
 }
 .main__developer {
   position: absolute;
-  font-size: 45px;
+  font-size: 40px;
   right: 45px;
   top: 270px;
   font-weight: bold;
@@ -43,18 +43,33 @@
   top: 732px;
   background-color: #A9D0C9;
   width: 100%;
-  height: 80px;
+  height: 60px;
 }
 .nav1__about {
   display: flex;
   position: absolute;
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 50px;
 }
 .nav1__menu {
   position: absolute;
   font-size: 35px;
-  right: 15px;
-  top: 15px;
+  right: 40px;
+  top: 10px;
+}
+
+.about-main {
+  position: relative;
+  display: flex;
+  height: 300px;
+  width: 100%;
+  top: 732px;
+}
+.about-main__about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
 }
