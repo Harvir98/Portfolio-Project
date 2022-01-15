@@ -8,11 +8,7 @@
 }
 .main__backgroundimage {
   position: absolute;
-  height: auto;
   width: 100%;
-}
-.main__menu {
-  font-size: 50px;
 }
 .main__name {
   position: absolute;
@@ -40,4 +36,25 @@
   font-weight: bold;
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-box-reflect: above -320px linear-gradient(transparent, rgba(255, 255, 255, 0.4));
+}
+
+.nav1 {
+  position: relative;
+  top: 732px;
+  background-color: #A9D0C9;
+  width: 100%;
+  height: 80px;
+}
+.nav1__about {
+  display: flex;
+  position: absolute;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+}
+.nav1__menu {
+  position: absolute;
+  font-size: 35px;
+  right: 15px;
+  top: 15px;
 }
