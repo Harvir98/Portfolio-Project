@@ -74,7 +74,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 // ABOUT PAGE
 
 .sectionA { 
-  min-height: 450px;
+  min-height: 600px;
 
   // NAV BAR FOR ABOUT PAGE
 
@@ -120,15 +120,63 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     gap: 20px;
   }
 
-  &__TSIMG {
+    &__TSIMG {
     @include TSBORDER();
     box-shadow: 0 0 5px 2px #282a2d;
-  }
+    }
 
   //  be able to click on image that leads to a project using that program
-  &__TSIMG:hover {
+    &__TSIMG:hover {
     transform: scale(1.2);
     cursor: pointer;
+    }
+}
+
+.sectionB {
+  min-height: 1000px;
+
+  // NAV BAR FOR ABOUT PAGE
+
+  &__nav {
+    position: relative;
+    background-color: $secondary-color;
+    width: 100%;
+    height: 60px;
+  }
+
+    // NAV BAR TEXT
+
+    &__navabout {
+      position: absolute;
+      font-family: $primary-font;
+      font-weight: bold;
+      font-size: 50px;
+    }
+
+    // NAV BAR MENU LOGO
+
+    &__navmenu {
+      position: absolute;
+      font-size: 35px;
+      right: 40px;
+      top: 10px
+    }
+  
+  &__projects {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    
+  }
+
+  &__projectsimg {
+    width: 300px;
+    height: 200px;
+    // visibility: hidden;
   }
 }
 
