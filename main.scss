@@ -1,12 +1,17 @@
-   
+
 // Colors
 
 $primary-color: #F0FFFC;
 $secondary-color: #A9D0C9;
-
+$tertiary-color: #5BA195;
 // Font
 
-$priamry-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+@mixin TSBORDER {
+  border: solid 2px $tertiary-color;
+  border-radius: 5px;
+}
 
 * {
   padding: 0px;
@@ -14,11 +19,16 @@ $priamry-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 }
 
 .main {
-  position: relative;
+  min-height: 650px;
+  // position: relative;
 
   &__backgroundimage {
     position: absolute;
     width: 100%;
+    height: 650px;
+    background-position: no-repeat;
+    background-size: cover;
+    z-index: -1;
   }
 
   // If i add in menu icon, text goes crazy
@@ -29,16 +39,15 @@ $priamry-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
   //   top: 10px
   // }
 
-
   &__name {
     // use mixinpanel to reduce code as majority is repeated in name, ts and dev
     position: absolute;
     font-size: 40px;
-    right: 50px;
+    right: 40px;
     top: 170px;
     font-weight: bold;
-    font-family: $priamry-font;
-    -webkit-box-reflect: above -520px linear-gradient(transparent, rgb(255, 255, 255, 0.4));
+    font-family: $primary-font;
+    -webkit-box-reflect: above -455px linear-gradient(transparent, rgb(255, 255, 255, 0.4));
   }
 
   &__TS {
@@ -47,8 +56,8 @@ $priamry-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     right: 40px;
     top: 220px;
     font-weight: bold;
-    font-family: $priamry-font;
-    -webkit-box-reflect: above -420px linear-gradient(transparent, rgb(255, 255, 255, 0.3));
+    font-family: $primary-font;
+    -webkit-box-reflect: above -360px linear-gradient(transparent, rgb(255, 255, 255, 0.3));
   }
 
   &__developer {
@@ -57,58 +66,88 @@ $priamry-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     right: 45px;
     top: 270px;
     font-weight: bold;
-    font-family: $priamry-font;
-    -webkit-box-reflect: above -320px linear-gradient(transparent, rgb(255, 255, 255, 0.4));
+    font-family: $primary-font;
+    -webkit-box-reflect: above -260px linear-gradient(transparent, rgb(255, 255, 255, 0.4));
   }
 }
 
-.nav {
-  position: relative;
-  // display: flex;
-  // justify-content: space-between;
-  top: 732px;
-  background-color: $secondary-color;
-  width: 100%;
-  height: 60px;
+// ABOUT PAGE
 
+.sectionA { 
+  min-height: 450px;
 
+  // NAV BAR FOR ABOUT PAGE
 
-  &__about {
-    display: flex;
-    position: absolute;
-    // align-items: flex-start;
-    font-family: $priamry-font;
-    font-weight: bold;
-    font-size: 50px;
-    // background-color: $secondary-color;
-    // width: 550px;
+  &__nav {
+    position: relative;
+    background-color: $secondary-color;
+    width: 100%;
+    height: 60px;
   }
 
-  &__menu {
-    position: absolute;
-    font-size: 35px;
-    right: 40px;
-    top: 10px
+    // NAV BAR TEXT
+
+    &__navabout {
+      position: absolute;
+      font-family: $primary-font;
+      font-weight: bold;
+      font-size: 50px;
+    }
+
+    // NAV BAR MENU LOGO
+
+    &__navmenu {
+      position: absolute;
+      font-size: 35px;
+      right: 40px;
+      top: 10px
+    }
+  
+  &__main {
+    text-align: justify;
+    margin: 30px;
+    font-size: 17px;
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
-}
 
-.about-main {
-  position: relative;
-  display: flex;
-  // border: 1px solid black;
-  height: 300px;
-  width: 100%;
-  top: 732px;
-
-  &__about {
-    // flex-direction: column;
+  &__TS {
+    margin-top: 30px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 20px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+  }
+
+  &__TSIMG {
+    @include TSBORDER();
+    box-shadow: 0 0 5px 2px #282a2d;
+  }
+
+  //  be able to click on image that leads to a project using that program
+  &__TSIMG:hover {
+    transform: scale(1.2);
+    cursor: pointer;
   }
 }
+
+// .about-main {
+//   position: relative;
+//   display: flex;
+//   // border: 1px solid black;
+//   height: 300px;
+//   width: 100%;
+
+//   &__about {
+//     // flex-direction: column;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+//     margin: 20px;
+//   }
+// }
 
 // .TechS {
 //   position: relative;
@@ -186,4 +225,4 @@ $priamry-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 //   &__name {
 //     position: absolute;
 //   }
-// }
+//
