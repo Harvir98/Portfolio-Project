@@ -14,8 +14,8 @@
   </head>
   <body>
 
-    <!-- MAINBODY -->
-    <main class="main">
+    <!-- 1st Page -->
+    <div class="main">
       <!-- BACKGROUND IMAGE -->
       <img src="./images/mountain.jpeg" alt="Background Image" class="main__backgroundimage">
       <!-- MENU ICON -->
@@ -24,7 +24,7 @@
       <div class="main__name">I'm Harvir.</div>
       <div class="main__TS">Trainee Software </div>
       <div class="main__developer">Developer.</div>
-    </main>
+    </div>
 
     <!-- ABOUT PAGE -->
     <section class="sectionA">
@@ -36,7 +36,9 @@
       
       <!-- MAIN SECTION FOR ABOUT PAGE -->
       <div class="sectionA__main">
-        <p class="sectionA__mainabout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, fuga amet? Est nam possimus pariatur quasi officia magnam? Voluptatem quasi a ea perspiciatis quaerat porro neque ducimus quas? Atque amet tempore delectus vel, sint hic quos soluta dolor excepturi commodi quod totam iure et voluptatibus natus? Fugiat dolorem magnam ipsam, eum dolores distinctio vitae error voluptatum. Placeat enim maxime harum sequi consectetur! Molestiae suscipit praesentium iure quas omnis rerum veritatis illum alias facere exercitationem excepturi cupiditate itaque cumque sequi sed, enim nesciunt assumenda esse distinctio temporibus nisi iusto porro id accusantium. A numquam cum eaque quibusdam, ipsam eius maiores dolore.</p>
+        <p class="sectionA__mainabout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, fuga amet? Est nam possimus pariatur quasi officia magnam? Voluptatem quasi a ea perspiciatis quaerat porro neque ducimus quas? Atque amet tempore delectus vel, sint hic quos soluta dolor excepturi commodi quod totam iure et voluptatibus natus? Fugiat dolorem magnam ipsam, eum dolores distinctio vitae error voluptatum. Placeat enim maxime harum sequi consectetur! Molestiae suscipit praesentium iure quas omnis rerum veritatis illum alias facere exercitationem excepturi cupiditate itaque cumque sequi sed</p>
+
+        <div class="sectionA__TSTitle">TECHSTACK</div>
 
         <div class="sectionA__TS">
           <img src="./images/git.svg" alt="Git image" class="sectionA__TSIMG">
@@ -86,22 +88,62 @@
       <!-- Projects Page Nav -->
 
       <div class="sectionC__nav">
-        <div class="sectionC__navabout">CONTACTS.</div>
+        <div class="sectionC__navabout">CONTACT.</div>
         <div<i class="fas fa-bars sectionC__navmenu"></i></div>
       </div>
 
       <!-- Contact Page Main Section -->
 
-      <div>Hello</div>
+       <div> 
+          <form class="sectionC__form">
 
-      <div class="sectionC__wrapper">
+            <div class="sectionC__cf">
+            <label for="firstName">First Name:</label>
+            </div>
+
+            <div>
+            <input type="text" name="text" id="firstName">
+            </div>
+
+            <div class="sectionC__cf">
+            <label for="lastName">Last Name:</label>
+            </div>
+
+            <div>
+            <input type="text" name="text" id="lastName">
+            </div>
+
+            <div class="sectionC__cf">
+            <label for="email">Email:</label>
+            </div>
+            <div>
+            <input type="text">
+            </div>
+
+            <div class="sectionC__cf">
+            <label for="message">Message:</label>
+            </div>
+
+            <div>
+            <textarea id="message" cols="25" rows="7"></textarea>
+            </div>
+
+            <div>
+            <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- <div class="sectionC__wrapper">
         <div class="sectionC__button">
           <div class="sectionC__icon">
             <i class="fab fa-github sectionC__Github"></i>
           </div>
           <span>Github</span>
         </div>
-      </div>
+      </div> -->
         
 
 
