@@ -32,18 +32,18 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
   }
 
   // If i add in menu icon, text goes crazy
-  // &__menu {
-  //   position: absolute;
-  //   font-size: 35px;
-  //   right: 40px;
-  //   top: 10px
-  // }
+  &__menu {
+    position: absolute;
+    font-size: 35px;
+    right: 30px;
+    top: 10px
+  }
 
   &__name {
     // use mixinpanel to reduce code as majority is repeated in name, ts and dev
     position: absolute;
-    font-size: 45px;
-    right: 40px;
+    font-size: 36px;
+    right: 30px;
     top: 170px;
     font-weight: bold;
     font-family: $primary-font;
@@ -52,8 +52,8 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 
   &__TS {
     position: absolute;
-    font-size: 45px;
-    right: 40px;
+    font-size: 36px;
+    right: 30px;
     top: 220px;
     font-weight: bold;
     font-family: $primary-font;
@@ -62,8 +62,8 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 
   &__developer {
     position: absolute;
-    font-size: 45px;
-    right: 40px;
+    font-size: 36px;
+    right: 30px;
     top: 270px;
     font-weight: bold;
     font-family: $primary-font;
@@ -91,7 +91,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
       position: absolute;
       font-family: $primary-font;
       font-weight: bold;
-      font-size: 50px;
+      font-size: 40px;
     }
 
     // NAV BAR MENU LOGO
@@ -99,15 +99,23 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     &__navmenu {
       position: absolute;
       font-size: 35px;
-      right: 40px;
+      right: 30px;
       top: 10px
     }
   
   &__main {
     text-align: justify;
-    margin: 30px;
+    margin: 25px;
     font-size: 17px;
     font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  &__TSTitle {
+    margin: 15px;
+    font-size: 20px;
+    font-family: $primary-font;
+    font-weight: bold;
+    text-align: center;
   }
 
   &__TS {
@@ -150,7 +158,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
       position: absolute;
       font-family: $primary-font;
       font-weight: bold;
-      font-size: 50px;
+      font-size: 40px;
     }
 
     // NAV BAR MENU LOGO
@@ -158,7 +166,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     &__navmenu {
       position: absolute;
       font-size: 35px;
-      right: 40px;
+      right: 30px;
       top: 10px
     }
   
@@ -182,6 +190,9 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 
 .sectionC {
   min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  // box-sizing: border-box;
 
   &__nav {
     position: relative;
@@ -196,7 +207,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
       position: absolute;
       font-family: $primary-font;
       font-weight: bold;
-      font-size: 50px;
+      font-size: 40px;
     }
 
     // NAV BAR MENU LOGO
@@ -204,41 +215,73 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     &__navmenu {
       position: absolute;
       font-size: 35px;
-      right: 40px;
+      right: 30px;
       top: 10px
     }
-
-  &__wrapper {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__button {
-    font-size: 20px;
-    background-color: yellow;
-    border-radius: 60px;
-    cursor: pointer;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    float: left;
-  }
-
-  &__icon {
-    display: inline-block;
-    font-size: 20px;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 50px;
-  }
-
-  &__Github {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
+  
+    &__form {
+      background-color: $tertiary-color;
+      display: grid;
+      width: 280px;
+      height: 300px;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      padding: 20px;
+      border-radius: 20px;
+      font-family: $primary-font;
+      box-shadow: 1px 1px 1px 1px ;
+    } 
+ 
 }
+
+
+
+
+  
+
+//   &__cf {
+//     width: 400px;
+//     height: 400px;
+//     text-align: center;
+//     border: solid 1px black;
+//     background-color: $tertiary-color;
+//     margin: 20px;
+//   }
+// }
+  
+
+//   &__wrapper {
+//     margin-top: 40px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   &__button {
+//     font-size: 20px;
+//     background-color: yellow;
+//     border-radius: 60px;
+//     cursor: pointer;
+//     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+//     overflow: hidden;
+//     float: left;
+//   }
+
+//   &__icon {
+//     display: inline-block;
+//     font-size: 20px;
+//     text-align: center;
+//     overflow: hidden;
+//     border-radius: 50px;
+//   }
+
+//   &__Github {
+//     font-size: 25px;
+//     line-height: 30px;
+//   }
+
+// }
 
 // .about-main {
 //   position: relative;
