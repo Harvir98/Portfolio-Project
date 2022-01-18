@@ -18,7 +18,7 @@
   position: absolute;
   font-size: 35px;
   right: 30px;
-  top: 10px;
+  top: 15px;
 }
 .main__name {
   position: absolute;
@@ -92,13 +92,14 @@
   text-align: center;
 }
 .sectionA__TS {
-  margin-top: 30px;
+  margin-top: 10px;
   display: grid;
-  grid-template-areas: "a a" "b c" "d e";
+  grid-template-areas: "a a a" "b c d" "e f g";
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  justify-items: center;
   gap: 20px;
 }
 .sectionA #techstack-header {
@@ -115,6 +116,12 @@
 }
 .sectionA #java-img {
   grid-area: e;
+}
+.sectionA #jquery-img {
+  grid-area: f;
+}
+.sectionA #nodejs-img {
+  grid-area: g;
 }
 .sectionA__TSIMG {
   border: solid 2px #5BA195;
@@ -268,6 +275,7 @@
     height: 300px;
   }
   .sectionA__TS {
+    margin-top: 30px;
     width: 300px;
     height: 300px;
     align-items: center;
