@@ -93,12 +93,28 @@
 }
 .sectionA__TS {
   margin-top: 30px;
-  display: flex;
+  display: grid;
+  grid-template-areas: "a a" "b c" "d e";
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   gap: 20px;
+}
+.sectionA #techstack-header {
+  grid-area: a;
+}
+.sectionA #git-img {
+  grid-area: b;
+}
+.sectionA #js-img {
+  grid-area: c;
+}
+.sectionA #sass-img {
+  grid-area: d;
+}
+.sectionA #java-img {
+  grid-area: e;
 }
 .sectionA__TSIMG {
   border: solid 2px #5BA195;
@@ -110,9 +126,6 @@
   cursor: pointer;
 }
 
-.sectionB {
-  min-height: 1000px;
-}
 .sectionB__nav {
   position: relative;
   background-color: #A9D0C9;
@@ -149,6 +162,8 @@
   min-height: 630px;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 .sectionC__nav {
   position: relative;
@@ -168,9 +183,11 @@
   right: 30px;
   top: 10px;
 }
+.sectionC #mugshot {
+  display: none;
+}
 .sectionC__form {
   background-color: #5BA195;
-  display: grid;
   width: 280px;
   height: 300px;
   justify-content: center;
@@ -180,6 +197,8 @@
   border-radius: 20px;
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-shadow: 1px 1px 1px 1px;
+  display: flex;
+  flex-direction: column;
 }
 .sectionC .inputbox {
   width: 200px;
@@ -197,10 +216,14 @@
   transform: scale(1.2);
   cursor: pointer;
 }
+.sectionC #linkedin-img:visited {
+  color: black;
+}
 
 @media screen and (min-width: 1048px) {
   .main__menu {
     display: none;
+    color: transparent;
   }
   .main__bar {
     display: flex;
@@ -219,6 +242,9 @@
     text-decoration: none;
     font-weight: bold;
   }
+  .main__nav-item:visited {
+    color: black;
+  }
   .main__name {
     font-size: 60px;
   }
@@ -229,9 +255,50 @@
     font-size: 60px;
   }
 
+  .sectionA__navmenu {
+    display: none;
+  }
+  .sectionA__main {
+    display: flex;
+    font-size: 25px;
+  }
+  .sectionA__mainabout {
+    margin: 55px 0 0 50px;
+    width: 650px;
+    height: 300px;
+  }
+  .sectionA__TS {
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-items: center;
+  }
+  .sectionA__TSIMG {
+    font-size: 60px;
+    height: 70px;
+  }
+  .sectionA #techstack-header {
+    font-size: 40px;
+  }
+
+  .sectionB__navmenu {
+    display: none;
+  }
   .sectionB__projects {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .sectionC__navmenu {
+    display: none;
+  }
+  .sectionC #mugshot {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px black;
   }
 }
