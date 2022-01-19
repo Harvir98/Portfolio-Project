@@ -1,21 +1,13 @@
 @import "../abstracts/variables";
 
 .nav {
-
-  &__item {
-    margin: 0 30px;
-    text-decoration: none;
-    font-weight: bold;
-
-  }
-
-  &__item:visited {
-    color: black;
-  }
-
+  display: none;
 }
 
+
+
 @media screen and (min-width: 1048px) {
+  
   .nav {
     display: flex;
     position: absolute;
@@ -27,5 +19,26 @@
     font-family: $primary-font;
     justify-content: flex-end;
     align-items: center;
+    color: white;
+    text-decoration: none;
+  
+  
+    &__item {
+      margin: 0 30px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+
+    
+  }
+
+  .nav__item:visited{
+    text-decoration: none;
+    color: blue;
+  }
+  .nav__item:link {
+    text-decoration: none;
   }
 }
+
