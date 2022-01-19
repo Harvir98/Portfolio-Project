@@ -36,7 +36,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     position: absolute;
     font-size: 35px;
     right: 30px;
-    top: 10px;
+    top: 15px;
   }
 
   &__name {
@@ -98,6 +98,10 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
       font-size: 40px;
     }
 
+    &__nav-links {
+      display: none;
+    }
+
     // NAV BAR MENU LOGO
 
     &__navmenu {
@@ -131,16 +135,17 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
   }
 
   &__TS {
-    margin-top: 30px;
+    margin-top: 10px;
     display: grid;
     grid-template-areas: 
-    "a a"
-    "b c"
-    "d e";
+    "a a a"
+    "b c d"
+    "e f g";
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    justify-items: center;
     gap: 20px;
   }
 
@@ -162,6 +167,14 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 
     #java-img {
       grid-area: e;
+    }
+
+    #jquery-img {
+      grid-area: f;
+    }
+
+    #nodejs-img {
+      grid-area: g;
     }
 
     &__TSIMG {
@@ -352,6 +365,27 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
       display: none;
     }
 
+    &__nav-links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 30px;
+      padding-top: 20px;
+      // margin: 0 30px;
+      gap: 60px;
+    }
+
+    &__nav-items {
+      text-decoration: none;
+      font-size: 16px;
+      font-family: $primary-font;
+      font-weight: bold;
+    }
+
+    &__nav-items:visited {
+      color: black
+    }
+
     &__main {
       display: flex;
       font-size: 25px;
@@ -364,6 +398,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     }
 
     &__TS {
+      margin-top: 30px;
       width: 300px;
       height: 300px;
       align-items: center;
