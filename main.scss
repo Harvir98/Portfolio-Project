@@ -1,3 +1,6 @@
+@import "./scss/layouts/nav";
+@import "./scss/abstracts/variables";
+@import "./scss/layouts/header";
 
 // Colors
 
@@ -24,7 +27,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 
   .background-image {
     position: absolute;
-    width: 100%;
+    width: 1400px;
     height: 650px;
     background-position: no-repeat;
     background-size: cover;
@@ -39,7 +42,9 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     top: 15px;
   }
 
-  &__name {
+  
+
+  &__name-heading {
     // use mixinpanel to reduce code as majority is repeated in name, ts and dev
     position: absolute;
     font-size: 36px;
@@ -50,7 +55,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     -webkit-box-reflect: above -455px linear-gradient(transparent, rgb(255, 255, 255, 0.4));
   }
 
-  &__TS {
+  &__trainee-software-heading {
     position: absolute;
     font-size: 36px;
     right: 30px;
@@ -68,10 +73,6 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     font-weight: bold;
     font-family: $primary-font;
     -webkit-box-reflect: above -260px linear-gradient(transparent, rgb(255, 255, 255, 0.4));
-  }
-
-  &__bar{
-    display: none;
   }
 }
 
@@ -336,21 +337,13 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
       align-items: center;
     }
 
-    &__nav-item {
-      margin: 0 30px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    
 
-    &__nav-item:visited {
-      color: black;
-    }
-
-    &__name {
+    &__name-heading {
       font-size: 60px;
     }
 
-    &__TS {
+    &__trainee-software-heading {
       font-size: 60px;
     }
 
