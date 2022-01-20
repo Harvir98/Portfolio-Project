@@ -3,103 +3,10 @@
 @import "./scss/layouts/projects";
 @import "./scss/layouts/contact";
 @import "./scss/layouts/about";
+@import "./scss/layouts/landingpage";
 
 
 * {
   padding: 0px;
   margin: 0px;
 }
-
-.main {
-  min-height: 650px;
-
-  .background-image {
-    position: absolute;
-    width: 1400px;
-    height: 650px;
-    background-position: no-repeat;
-    background-size: cover;
-    z-index: -1;
-  }
-
-  &__name-heading {
-    position: absolute;
-    font-size: 36px;
-    right: 30px;
-    top: 170px;
-    font-weight: bold;
-    font-family: $primary-font;
-    color: $primary-color;
-  }
-
-  &__trainee-software-heading {
-    position: absolute;
-    font-size: 36px;
-    right: 30px;
-    top: 220px;
-    font-weight: bold;
-    font-family: $primary-font;
-    color: $primary-color;
-  }
-
-  &__developer {
-    position: absolute;
-    font-size: 36px;
-    right: 30px;
-    top: 270px;
-    font-weight: bold;
-    font-family: $primary-font;
-    color: $primary-color;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .main {
-    
-    &__name-heading {
-      font-size: 50px;
-    }
-
-    &__trainee-software-heading {
-      font-size: 50px;
-    }
-
-    &__developer {
-      font-size: 50px;
-    }
-  }
-} 
-
-@media screen and (min-width: 1048px) {
-  .main {
-    
-    &__name-heading {
-      font-size: 60px;
-    }
-
-    &__trainee-software-heading {
-      font-size: 60px;
-      top: 230px;
-    }
-
-    &__developer {
-      font-size: 60px;
-      top: 290px;
-    }
-  }
-
-  .sectionC {
-
-    #mugshot {
-      display: flex;
-      flex-direction: row;
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
-      box-shadow: 10px 10px 30px black;
-    }
-  }
-}
-
-
- 
