@@ -1,14 +1,89 @@
-.nav__item {
-  margin: 0 30px;
-  text-decoration: none;
-  font-weight: bold;
+.main__menu {
+  position: absolute;
+  font-size: 30px;
+  right: 30px;
+  top: 15px;
+  color: #F0FFFC;
 }
-.nav__item:visited {
-  color: black;
+.main .nav {
+  display: none;
+}
+
+.sectionA__nav {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+.sectionA__navabout {
+  position: absolute;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+.sectionA__nav-links {
+  display: none;
+}
+.sectionA__nav-items:visited {
+  text-decoration: none;
+}
+.sectionA__navmenu {
+  position: absolute;
+  font-size: 35px;
+  right: 30px;
+  top: 10px;
+  color: #F0FFFC;
+}
+
+.sectionB__nav {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+.sectionB__navabout {
+  position: absolute;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #F0FFFC;
+}
+.sectionB__navmenu {
+  position: absolute;
+  font-size: 35px;
+  right: 30px;
+  top: 10px;
+  color: #F0FFFC;
+}
+
+.sectionC__nav {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+.sectionC__navabout {
+  position: absolute;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #F0FFFC;
+}
+.sectionC__navmenu {
+  position: absolute;
+  font-size: 35px;
+  right: 30px;
+  top: 10px;
+  color: #F0FFFC;
 }
 
 @media screen and (min-width: 1048px) {
-  .nav {
+  .main__menu {
+    display: none;
+    color: transparent;
+  }
+  .main .nav {
     display: flex;
     position: absolute;
     width: 100%;
@@ -19,5 +94,41 @@
     font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     justify-content: flex-end;
     align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+  .main .nav__item {
+    font-size: 16px;
+    margin: 0 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  .main .nav a {
+    text-decoration: none;
+    color: blue;
+  }
+
+  .sectionA__navmenu {
+    display: none;
+  }
+  .sectionA__nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    padding-top: 20px;
+    gap: 60px;
+    color: white;
+  }
+  .sectionA__nav-items {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    color: #F0FFFC;
+  }
+  .sectionA__nav-items:visited {
+    color: #F0FFFC;
   }
 }

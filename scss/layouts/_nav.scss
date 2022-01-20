@@ -1,31 +1,191 @@
 @import "../abstracts/variables";
 
-.nav {
+.main {
 
-  &__item {
-    margin: 0 30px;
-    text-decoration: none;
-    font-weight: bold;
-
+  &__menu {
+    position: absolute;
+    font-size: 30px;
+    right: 30px;
+    top: 15px;
+    color: $primary-color;
   }
 
-  &__item:visited {
-    color: black;
+  .nav {
+    display: none;
   }
+}
+
+.sectionA {
+  // NAV BAR FOR ABOUT PAGE
+  &__nav {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+  }
+    // NAV BAR TEXT
+    &__navabout {
+      position: absolute;
+      font-family: $primary-font;
+      font-weight: bold;
+      font-size: 40px;
+      color: white;
+    }
+
+    &__nav-links {
+      display: none;
+    }
+    
+    &__nav-items:visited {
+      text-decoration: none;
+    }
+    // NAV BAR MENU LOGO
+    &__navmenu {
+      position: absolute;
+      font-size: 30px;
+      right: 30px;
+      top: 10px;
+      color: $primary-color;
+    }
+}
+
+.sectionB {
+
+  // NAV BAR FOR ABOUT PAGE
+
+  &__nav {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+  }
+
+    // NAV BAR TEXT
+
+    &__navabout {
+      position: absolute;
+      font-family: $primary-font;
+      font-weight: bold;
+      font-size: 40px;
+      color: $primary-color;
+    }
+
+
+    // NAV BAR MENU LOGO
+
+    &__navmenu {
+      position: absolute;
+      font-size: 30px;
+      right: 30px;
+      top: 10px;
+      color: $primary-color;
+    }
+}
+
+.sectionC {
+
+  &__nav {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+  }
+
+    // NAV BAR TEXT
+
+    &__navabout {
+      position: absolute;
+      font-family: $primary-font;
+      font-weight: bold;
+      font-size: 40px;
+      color: $primary-color;;
+    }
+
+    // NAV BAR MENU LOGO
+
+    &__navmenu {
+      position: absolute;
+      font-size: 30px;
+      right: 30px;
+      top: 10px;
+      color: $primary-color;
+    }
 
 }
 
 @media screen and (min-width: 1048px) {
-  .nav {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    font-family: $primary-font;
-    justify-content: flex-end;
-    align-items: center;
+  .main {
+
+    &__menu {
+      display: none;
+      color: transparent;
+    }
+    
+    .nav {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 60px;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      font-family: $primary-font;
+      justify-content: flex-end;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+  
+      &__item {
+        font-size: 16px;
+        margin: 0 30px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+      }
+
+    a {
+      text-decoration: none;
+      color: blue;
+      }
+    }
+  }
+
+  .sectionA {
+
+    &__menu-icon {
+      display: none;
+    }
+
+    &__navmenu {
+      display: none;
+    }
+
+    &__nav-links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 30px;
+      padding-top: 20px;
+      // margin: 0 30px;
+      gap: 60px;
+      color: white;
+    }
+
+    &__nav-items {
+      text-decoration: none;
+      font-size: 16px;
+      font-family: $primary-font;
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    &__nav-items:visited {
+      color: $primary-color;
+    }
+
+
   }
 }
+
+
+
