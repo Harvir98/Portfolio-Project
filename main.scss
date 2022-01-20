@@ -1,18 +1,12 @@
 @import "./scss/layouts/nav";
 @import "./scss/abstracts/variables";
 @import "./scss/layouts/header";
-
-// Colors
-
-$primary-color: white;
-$secondary-color: #A9D0C9;
-$tertiary-color: #5BA195;
-// Font
-
-$primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@import "./scss/layouts/projects";
+@import "./scss/layouts/contact";
+@import "./scss/layouts/about";
 
 @mixin TSBORDER {
-  border: solid 2px $tertiary-color;
+  border: solid 2px black;
   border-radius: 5px;
 }
 
@@ -23,36 +17,23 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 
 .main {
   min-height: 650px;
-  // position: relative;
 
   .background-image {
     position: absolute;
-    width: 1600px;
+    width: 1400px;
     height: 650px;
     background-position: no-repeat;
     background-size: cover;
     z-index: -1;
   }
 
-  // If i add in menu icon, text goes crazy
-  &__menu {
-    position: absolute;
-    font-size: 35px;
-    right: 30px;
-    top: 15px;
-    color: $primary-color;
-  }
-
-  
   &__name-heading {
-    // use mixinpanel to reduce code as majority is repeated in name, ts and dev
     position: absolute;
     font-size: 36px;
     right: 30px;
     top: 170px;
     font-weight: bold;
     font-family: $primary-font;
-    
     color: $primary-color;
   }
 
@@ -81,38 +62,6 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 
 .sectionA { 
   min-height: 600px;
-
-  // NAV BAR FOR ABOUT PAGE
-
-  &__nav {
-    position: relative;
-    background-color: black;
-    width: 100%;
-    height: 60px;
-  }
-
-    // NAV BAR TEXT
-
-    &__navabout {
-      position: absolute;
-      font-family: $primary-font;
-      font-weight: bold;
-      font-size: 40px;
-      color: $primary-color;
-    }
-
-    &__nav-links {
-      display: none;
-    }
-
-    // NAV BAR MENU LOGO
-
-    &__navmenu {
-      position: absolute;
-      font-size: 35px;
-      right: 30px;
-      top: 10px
-    }
   
   &__main {
     text-align: justify;
@@ -193,34 +142,6 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 }
 
 .sectionB {
-
-
-  // NAV BAR FOR ABOUT PAGE
-
-  &__nav {
-    position: relative;
-    background-color: $secondary-color;
-    width: 100%;
-    height: 60px;
-  }
-
-    // NAV BAR TEXT
-
-    &__navabout {
-      position: absolute;
-      font-family: $primary-font;
-      font-weight: bold;
-      font-size: 40px;
-    }
-
-    // NAV BAR MENU LOGO
-
-    &__navmenu {
-      position: absolute;
-      font-size: 35px;
-      right: 30px;
-      top: 10px
-    }
   
   &__projects {
     margin-top: 30px;
@@ -230,7 +151,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
     align-items: center;
     gap: 40px;
     text-align: center;
-    
+    color: black;
   }
 
   &__projectsimg {
@@ -246,39 +167,13 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
   flex-direction: column;
   align-content: center;
   align-items: center;
-  // box-sizing: border-box;
-
-  &__nav {
-    position: relative;
-    background-color: $secondary-color;
-    width: 100%;
-    height: 60px;
-  }
-
-    // NAV BAR TEXT
-
-    &__navabout {
-      position: absolute;
-      font-family: $primary-font;
-      font-weight: bold;
-      font-size: 40px;
-    }
-
-    // NAV BAR MENU LOGO
-
-    &__navmenu {
-      position: absolute;
-      font-size: 35px;
-      right: 30px;
-      top: 10px
-    }
-
+ 
     #mugshot {
       display: none;
     }
   
     &__form {
-      background-color: $tertiary-color;
+      background-color: black;
       // display: grid;
       width: 280px;
       height: 300px;
@@ -291,6 +186,7 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
       box-shadow: 1px 1px 1px 1px ;
       display: flex;
       flex-direction: column;
+      color: $primary-color;
     }
     
       .inputbox {
@@ -321,26 +217,6 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 @media screen and (min-width: 1048px) {
   .main {
 
-    &__menu {
-      display: none;
-      color: transparent;
-    }
-
-    &__bar {
-      display: flex;
-      position: absolute;
-      width: 100%;
-      height: 60px;
-      top: 0;
-      left: 0;
-      background-color: transparent;
-      font-family: $primary-font;
-      justify-content: flex-end;
-      align-items: center;
-    }
-
-    
-
     &__name-heading {
       font-size: 60px;
     }
@@ -356,37 +232,12 @@ $primary-font: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helv
 
   .sectionA {
 
-    &__navmenu {
-      display: none;
-    }
-
-    &__nav-links {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-right: 30px;
-      padding-top: 20px;
-      // margin: 0 30px;
-      gap: 60px;
-    }
-
-    &__nav-items {
-      text-decoration: none;
-      font-size: 16px;
-      font-family: $primary-font;
-      font-weight: bold;
-    }
-
-    &__nav-items:visited {
-      color: black
-    }
-
     &__main {
       display: flex;
       font-size: 25px;
     }
 
-    &__mainabout {
+    &__main-bio {
       margin: 55px 0 0 50px;
       width: 650px;
       height: 300px;
