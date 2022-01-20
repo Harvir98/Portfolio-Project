@@ -234,7 +234,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px;
+  margin: 40px;
   padding: 20px;
   border-radius: 20px;
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -248,6 +248,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   color: #F0FFFC;
+  gap: 5px;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .sectionC .inputbox {
@@ -259,7 +261,8 @@
 }
 
 .sectionC .contact-icons {
-  font-size: 40px;
+  margin-top: 20px;
+  font-size: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

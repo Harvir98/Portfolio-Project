@@ -19,7 +19,7 @@
       height: 300px;
       justify-content: center;
       align-items: center;
-      margin: 30px;
+      margin: 40px;
       padding: 20px;
       border-radius: 20px;
       font-family: $primary-font;
@@ -27,6 +27,8 @@
       display: flex;
       flex-direction: column;
       color: $primary-color;
+      gap: 5px;
+      font-family: $primary-font;
     }
     
       .inputbox {
@@ -38,7 +40,8 @@
       }
     
   .contact-icons {
-    font-size: 40px;
+    margin-top: 20px;
+    font-size: 45px;
     display: flex;
     justify-content: center;
     gap: 10px
