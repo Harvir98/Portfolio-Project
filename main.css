@@ -317,11 +317,23 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     -webkit-box-shadow: 10px 10px 30px black;
             box-shadow: 10px 10px 30px black;
+  }
+  .sectionC .contact-main {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -ms-grid-columns: 500px 500px;
+        grid-template-columns: 500px 500px;
+    -ms-grid-rows: 400px;
+        grid-template-rows: 400px;
   }
 }
 
