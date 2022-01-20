@@ -75,13 +75,17 @@
 
     &__TSIMG {
     @include TSBORDER();
+    width: 50px;
+    height: 50px;
     box-shadow: 0 0 5px 2px #282a2d;
+    transition: width 2s, height 2s, background-color 4s, transform 2s;
     }
 
   //  be able to click on image that leads to a project using that program
     &__TSIMG:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+    // transform: scale(1.2);
+      cursor: pointer;
+      transform: rotate(360deg);
     }
 }
 
@@ -90,6 +94,11 @@
     
     &__main {
       font-size: 21px;
+    }
+
+    &__TSIMG {
+      width: 70px;
+      height: 70px;
     }
   }
 }
@@ -114,11 +123,6 @@
       height: 300px;
       align-items: center;
       justify-items: center;
-    }
-
-    &__TSIMG { 
-      font-size: 60px;
-      height: 70px;
     }
 
     #techstack-header {
