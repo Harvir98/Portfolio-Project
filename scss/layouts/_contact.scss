@@ -14,7 +14,6 @@
   
     &__form {
       background-color: black;
-      // display: grid;
       width: 280px;
       height: 300px;
       justify-content: center;
@@ -44,7 +43,7 @@
     font-size: 45px;
     display: flex;
     justify-content: center;
-    gap: 10px
+    gap: 20px
   }
 
   .contact-icons:hover {
@@ -55,4 +54,24 @@
     #linkedin-img:visited {
       color: black;
   }
+}
+
+@media screen and (min-width: 768px) {
+
+  .sectionC {
+      
+    .contact-icons {
+      font-size: 55px;
+      gap: 30px
+    }
+  
+    .contact-icons:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  
+      #linkedin-img:visited {
+        color: black;
+    }
+  } 
 }
