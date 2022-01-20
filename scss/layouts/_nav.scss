@@ -1,5 +1,28 @@
 @import "../abstracts/variables";
 
+@mixin nav-bar {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+}
+
+@mixin nav-heading {
+  position: absolute;
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 40px;
+  color: $primary-color;
+}
+
+@mixin nav-menu-icon {
+  position: absolute;
+  font-size: 30px;
+  right: 30px;
+  top: 10px;
+  color: $primary-color;
+}
+
 .main {
 
   &__menu {
@@ -18,18 +41,11 @@
 .sectionA {
   // NAV BAR FOR ABOUT PAGE
   &__nav {
-    position: relative;
-    background-color: black;
-    width: 100%;
-    height: 60px;
+    @include nav-bar();
   }
     // NAV BAR TEXT
     &__navabout {
-      position: absolute;
-      font-family: $primary-font;
-      font-weight: bold;
-      font-size: 40px;
-      color: white;
+      @include nav-heading();
     }
 
     &__nav-links {
@@ -41,74 +57,43 @@
     }
     // NAV BAR MENU LOGO
     &__navmenu {
-      position: absolute;
-      font-size: 30px;
-      right: 30px;
-      top: 10px;
-      color: $primary-color;
+      @include nav-menu-icon();
     }
 }
 
 .sectionB {
 
-  // NAV BAR FOR ABOUT PAGE
+  // NAV BAR FOR PROJECTS PAGE
 
   &__nav {
-    position: relative;
-    background-color: black;
-    width: 100%;
-    height: 60px;
+    @include nav-bar();
   }
 
     // NAV BAR TEXT
-
     &__navabout {
-      position: absolute;
-      font-family: $primary-font;
-      font-weight: bold;
-      font-size: 40px;
-      color: $primary-color;
+      @include nav-heading();
     }
 
-
     // NAV BAR MENU LOGO
-
     &__navmenu {
-      position: absolute;
-      font-size: 30px;
-      right: 30px;
-      top: 10px;
-      color: $primary-color;
+      @include nav-menu-icon();
     }
 }
 
-.sectionC {
+.sectionC { 
 
   &__nav {
-    position: relative;
-    background-color: black;
-    width: 100%;
-    height: 60px;
+    @include nav-bar();
   }
 
     // NAV BAR TEXT
-
     &__navabout {
-      position: absolute;
-      font-family: $primary-font;
-      font-weight: bold;
-      font-size: 40px;
-      color: $primary-color;;
+      @include nav-heading();
     }
 
-    // NAV BAR MENU LOGO
-
+    // NAV BAR MENU ICON
     &__navmenu {
-      position: absolute;
-      font-size: 30px;
-      right: 30px;
-      top: 10px;
-      color: $primary-color;
+      @include nav-menu-icon();
     }
 
 }
@@ -161,7 +146,6 @@
       align-items: center;
       margin-right: 30px;
       padding-top: 20px;
-      // margin: 0 30px;
       gap: 60px;
       color: white;
     }
@@ -192,71 +176,6 @@
 }
 
 @media screen and (min-width: 1048px) {
-  // .main {
-
-  //   &__menu {
-  //     display: none;
-  //     color: transparent;
-  //   }
-    
-  //   .nav {
-  //     display: flex;
-  //     position: absolute;
-  //     width: 100%;
-  //     height: 60px;
-  //     top: 0;
-  //     left: 0;
-  //     background-color: transparent;
-  //     font-family: $primary-font;
-  //     justify-content: flex-end;
-  //     align-items: center;
-  //     color: white;
-  //     text-decoration: none;
-  
-  //     &__item {
-  //       font-size: 16px;
-  //       margin: 0 30px;
-  //       text-decoration: none;
-  //       font-weight: bold;
-  //       color: white;
-  //     }
-
-  //   a {
-  //     text-decoration: none;
-  //     }
-  //   }
-  // }
-
-  // .sectionA {
-
-  //   &__menu-icon {
-  //     display: none;
-  //   }
-
-  //   &__nav-links {
-  //     display: flex;
-  //     justify-content: flex-end;
-  //     align-items: center;
-  //     margin-right: 30px;
-  //     padding-top: 20px;
-  //     // margin: 0 30px;
-  //     gap: 60px;
-  //     color: white;
-  //   }
-
-  //   &__nav-items {
-  //     text-decoration: none;
-  //     font-size: 16px;
-  //     font-family: $primary-font;
-  //     font-weight: bold;
-  //     color: $primary-color;
-  //   }
-
-  //   &__nav-items:visited {
-  //     color: $primary-color;
-  //   }
-  // }
-
   .sectionB {
 
     &__menu-icon {

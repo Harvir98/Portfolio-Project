@@ -22,7 +22,7 @@
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 40px;
-  color: white;
+  color: #F0FFFC;
 }
 
 .sectionA__nav-links {
@@ -485,7 +485,7 @@
   color: #F0FFFC;
 }
 
-.main__trainee-software-heading {
+.main__traineesoftware-heading {
   position: absolute;
   font-size: 36px;
   right: 30px;
@@ -509,7 +509,7 @@
   .main__name-heading {
     font-size: 50px;
   }
-  .main__trainee-software-heading {
+  .main__traineesoftware-heading {
     font-size: 50px;
   }
   .main__developer {
@@ -521,7 +521,7 @@
   .main__name-heading {
     font-size: 60px;
   }
-  .main__trainee-software-heading {
+  .main__traineesoftware-heading {
     font-size: 60px;
     top: 230px;
   }

@@ -12,7 +12,7 @@
     text-align: justify;
     margin: 25px;
     font-size: 17px;
-    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: $primary-font;
   }
 
   &__mainimg {
@@ -20,7 +20,6 @@
     float: right;
     height: 120px;
     width: 120px;
-    
   }
 
   &__TSTitle {
@@ -96,7 +95,6 @@
 }
 
 @media screen and (min-width: 1048px) {
-  
   .sectionA {
 
     &__main {
