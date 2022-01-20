@@ -1,14 +1,9 @@
 @import "./scss/layouts/nav";
 @import "./scss/abstracts/variables";
-@import "./scss/layouts/header";
 @import "./scss/layouts/projects";
 @import "./scss/layouts/contact";
 @import "./scss/layouts/about";
 
-@mixin TSBORDER {
-  border: solid 2px black;
-  border-radius: 5px;
-}
 
 * {
   padding: 0px;
@@ -58,175 +53,89 @@
   }
 }
 
-// ABOUT PAGE
-
-.sectionA { 
-  min-height: 600px;
-  
-  &__main {
-    text-align: justify;
-    margin: 25px;
-    font-size: 17px;
-    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-
-  &__mainimg {
-    display: flex;
-    float: right;
-    height: 120px;
-    width: 120px;
+@media screen and (min-width: 768px) {
+  .main {
     
+    &__name-heading {
+      font-size: 50px;
+    }
+
+    &__trainee-software-heading {
+      font-size: 50px;
+    }
+
+    &__developer {
+      font-size: 50px;
+    }
   }
 
-  &__TSTitle {
-    margin: 15px;
-    font-size: 20px;
-    font-family: $primary-font;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  &__TS {
-    margin-top: 10px;
-    display: grid;
-    grid-template-areas: 
-    "a a a"
-    "b c d"
-    "e f g";
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    justify-items: center;
-    gap: 20px;
-  }
-
-    #techstack-header{
-      grid-area: a;
-    }
-
-    #git-img {
-      grid-area: b;
-    }
-
-    #js-img {
-      grid-area: c;
-    }
-
-    #sass-img {
-      grid-area: d;
-    }
-
-    #java-img {
-      grid-area: e;
-    }
-
-    #jquery-img {
-      grid-area: f;
-    }
-
-    #nodejs-img {
-      grid-area: g;
-    }
-
-    &__TSIMG {
-    @include TSBORDER();
-    box-shadow: 0 0 5px 2px #282a2d;
-    }
-
-  //  be able to click on image that leads to a project using that program
-    &__TSIMG:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-    }
-}
-
-.sectionB {
-  
-  &__projects {
-    margin-top: 30px;
+  .sectionC {
+    min-height: 630px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
     align-items: center;
-    gap: 40px;
-    text-align: center;
-    color: black;
-  }
-
-  &__projectsimg {
-    width: 300px;
-    height: 200px;
-    // visibility: hidden;
-  }
-}
-
-.sectionC {
-  min-height: 630px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
- 
-    #mugshot {
-      display: none;
+   
+      #mugshot {
+        display: none;
+      }
+    
+      &__form {
+        background-color: black;
+        // display: grid;
+        width: 280px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        padding: 20px;
+        border-radius: 20px;
+        font-family: $primary-font;
+        box-shadow: 1px 1px 1px 1px ;
+        display: flex;
+        flex-direction: column;
+        color: $primary-color;
+      }
+      
+        .inputbox {
+          width: 200px;
+        }
+  
+        button:hover {
+          cursor: pointer;
+        }
+      
+    .contact-icons {
+      font-size: 50px;
+      gap: 30px
     }
   
-    &__form {
-      background-color: black;
-      // display: grid;
-      width: 280px;
-      height: 300px;
-      justify-content: center;
-      align-items: center;
-      margin: 30px;
-      padding: 20px;
-      border-radius: 20px;
-      font-family: $primary-font;
-      box-shadow: 1px 1px 1px 1px ;
-      display: flex;
-      flex-direction: column;
-      color: $primary-color;
+    .contact-icons:hover {
+      transform: scale(1.9);
+      cursor: pointer;
     }
-    
-      .inputbox {
-        width: 200px;
-      }
-
-      button:hover {
-        cursor: pointer;
-      }
-    
-  .contact-icons {
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 10px
-  }
-
-  .contact-icons:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-
-    #linkedin-img:visited {
-      color: black;
-  }
-}
+  
+      #linkedin-img:visited {
+        color: black;
+    }
+  } 
+} 
 
 @media screen and (min-width: 1048px) {
   .main {
-
+    
     &__name-heading {
       font-size: 60px;
     }
 
     &__trainee-software-heading {
       font-size: 60px;
+      top: 230px;
     }
 
     &__developer {
       font-size: 60px;
+      top: 290px;
     }
   }
 
@@ -263,10 +172,6 @@
 
   .sectionB {
 
-    &__navmenu {
-      display: none;
-    }
-
     &__projects {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
@@ -275,10 +180,6 @@
   }
 
   .sectionC {
-
-    &__navmenu {
-      display: none;
-    }
 
     #mugshot {
       display: flex;

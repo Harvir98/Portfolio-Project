@@ -113,7 +113,7 @@
 
 }
 
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 768px) {
   .main {
 
     &__menu {
@@ -145,7 +145,6 @@
 
     a {
       text-decoration: none;
-      color: blue;
       }
     }
   }
@@ -153,10 +152,6 @@
   .sectionA {
 
     &__menu-icon {
-      display: none;
-    }
-
-    &__navmenu {
       display: none;
     }
 
@@ -182,7 +177,98 @@
     &__nav-items:visited {
       color: $primary-color;
     }
+  }
+  .sectionB {
+    &__menu-icon {
+      display: none;
+    }
+  }
 
+  .sectionC {
+    &__menu-icon {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1048px) {
+  // .main {
+
+  //   &__menu {
+  //     display: none;
+  //     color: transparent;
+  //   }
+    
+  //   .nav {
+  //     display: flex;
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 60px;
+  //     top: 0;
+  //     left: 0;
+  //     background-color: transparent;
+  //     font-family: $primary-font;
+  //     justify-content: flex-end;
+  //     align-items: center;
+  //     color: white;
+  //     text-decoration: none;
+  
+  //     &__item {
+  //       font-size: 16px;
+  //       margin: 0 30px;
+  //       text-decoration: none;
+  //       font-weight: bold;
+  //       color: white;
+  //     }
+
+  //   a {
+  //     text-decoration: none;
+  //     }
+  //   }
+  // }
+
+  // .sectionA {
+
+  //   &__menu-icon {
+  //     display: none;
+  //   }
+
+  //   &__nav-links {
+  //     display: flex;
+  //     justify-content: flex-end;
+  //     align-items: center;
+  //     margin-right: 30px;
+  //     padding-top: 20px;
+  //     // margin: 0 30px;
+  //     gap: 60px;
+  //     color: white;
+  //   }
+
+  //   &__nav-items {
+  //     text-decoration: none;
+  //     font-size: 16px;
+  //     font-family: $primary-font;
+  //     font-weight: bold;
+  //     color: $primary-color;
+  //   }
+
+  //   &__nav-items:visited {
+  //     color: $primary-color;
+  //   }
+  // }
+
+  .sectionB {
+
+    &__menu-icon {
+      display: none;
+    }
+  }
+
+  .sectionC {
+
+    &__menu-icon {
+      display: none;
+    }
 
   }
 }
