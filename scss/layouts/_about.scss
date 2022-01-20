@@ -95,3 +95,37 @@
   }
 }
 
+@media screen and (min-width: 1048px) {
+  
+  .sectionA {
+
+    &__main {
+      display: flex;
+      font-size: 25px;
+    }
+
+    &__main-bio {
+      margin: 55px 0 0 50px;
+      width: 650px;
+      height: 300px;
+    }
+
+    &__TS {
+      margin-top: 30px;
+      width: 300px;
+      height: 300px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    &__TSIMG { 
+      font-size: 60px;
+      height: 70px;
+    }
+
+    #techstack-header {
+      font-size: 40px;
+    }
+  }
+}
+

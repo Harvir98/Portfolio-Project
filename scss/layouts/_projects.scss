@@ -30,6 +30,17 @@
       grid-template-rows: 1fr 1fr ;
       grid-template-columns: 1fr 1fr;
     }
+  } 
+}
+
+@media screen and (min-width: 1048px) {
+
+  .sectionB {
+
+    &__projects {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
-  
 }

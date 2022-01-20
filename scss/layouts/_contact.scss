@@ -14,12 +14,11 @@
   
     &__form {
       background-color: black;
-      // display: grid;
       width: 280px;
       height: 300px;
       justify-content: center;
       align-items: center;
-      margin: 30px;
+      margin: 40px;
       padding: 20px;
       border-radius: 20px;
       font-family: $primary-font;
@@ -27,6 +26,8 @@
       display: flex;
       flex-direction: column;
       color: $primary-color;
+      gap: 5px;
+      font-family: $primary-font;
     }
     
       .inputbox {
@@ -38,10 +39,11 @@
       }
     
   .contact-icons {
-    font-size: 40px;
+    margin-top: 20px;
+    font-size: 45px;
     display: flex;
     justify-content: center;
-    gap: 10px
+    gap: 20px
   }
 
   .contact-icons:hover {
@@ -51,5 +53,40 @@
 
     #linkedin-img:visited {
       color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .sectionC {
+      
+    .contact-icons {
+      font-size: 55px;
+      gap: 30px
+    }
+  
+    .contact-icons:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  
+      #linkedin-img:visited {
+        color: black;
+    }
+  } 
+}
+
+@media screen and (min-width: 1048px) {
+  
+  .sectionC {
+
+    #mugshot {
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      box-shadow: 10px 10px 30px black;
+    }
   }
 }
