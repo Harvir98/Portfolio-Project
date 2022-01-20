@@ -1,0 +1,55 @@
+@import "../abstracts/variables";
+
+
+.sectionC {
+  min-height: 630px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+ 
+    #mugshot {
+      display: none;
+    }
+  
+    &__form {
+      background-color: black;
+      // display: grid;
+      width: 280px;
+      height: 300px;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      padding: 20px;
+      border-radius: 20px;
+      font-family: $primary-font;
+      box-shadow: 1px 1px 1px 1px ;
+      display: flex;
+      flex-direction: column;
+      color: $primary-color;
+    }
+    
+      .inputbox {
+        width: 200px;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+    
+  .contact-icons {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px
+  }
+
+  .contact-icons:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+    #linkedin-img:visited {
+      color: black;
+  }
+}

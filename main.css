@@ -87,7 +87,7 @@
   color: #F0FFFC;
 }
 
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 768px) {
   .main__menu {
     display: none;
     color: transparent;
@@ -121,12 +121,8 @@
   }
   .main .nav a {
     text-decoration: none;
-    color: blue;
   }
   .sectionA__menu-icon {
-    display: none;
-  }
-  .sectionA__navmenu {
     display: none;
   }
   .sectionA__nav-links {
@@ -154,54 +150,133 @@
   .sectionA__nav-items:visited {
     color: #F0FFFC;
   }
+  .sectionB__menu-icon {
+    display: none;
+  }
+  .sectionC__menu-icon {
+    display: none;
+  }
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
+@media screen and (min-width: 1048px) {
+  .sectionB__menu-icon {
+    display: none;
+  }
+  .sectionC__menu-icon {
+    display: none;
+  }
 }
 
-.main {
-  min-height: 650px;
-}
-
-.main .background-image {
-  position: absolute;
-  width: 1400px;
-  height: 650px;
-  background-position: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
-.main__name-heading {
-  position: absolute;
-  font-size: 36px;
-  right: 30px;
-  top: 170px;
-  font-weight: bold;
+.sectionB__projects {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  text-align: center;
+  color: black;
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.sectionB__projectsimg {
+  width: 300px;
+  height: 200px;
+}
+
+@media screen and (min-width: 840px) {
+  .sectionB__projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sectionC {
+  min-height: 630px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionC #mugshot {
+  display: none;
+}
+
+.sectionC__form {
+  background-color: black;
+  width: 280px;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-box-shadow: 1px 1px 1px 1px;
+          box-shadow: 1px 1px 1px 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #F0FFFC;
 }
 
-.main__trainee-software-heading {
-  position: absolute;
-  font-size: 36px;
-  right: 30px;
-  top: 220px;
-  font-weight: bold;
-  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #F0FFFC;
+.sectionC .inputbox {
+  width: 200px;
 }
 
-.main__developer {
-  position: absolute;
-  font-size: 36px;
-  right: 30px;
-  top: 270px;
-  font-weight: bold;
-  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #F0FFFC;
+.sectionC button:hover {
+  cursor: pointer;
+}
+
+.sectionC .contact-icons {
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.sectionC .contact-icons:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.sectionC #linkedin-img:visited {
+  color: black;
 }
 
 .sectionA {
@@ -305,104 +380,131 @@
   cursor: pointer;
 }
 
-.sectionB__projects {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-  text-align: center;
-  color: black;
+@media screen and (min-width: 768px) {
+  .sectionA__main {
+    font-size: 21px;
+  }
 }
 
-.sectionB__projectsimg {
-  width: 300px;
-  height: 200px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-.sectionC {
-  min-height: 630px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.main {
+  min-height: 650px;
 }
 
-.sectionC #mugshot {
-  display: none;
+.main .background-image {
+  position: absolute;
+  width: 1400px;
+  height: 650px;
+  background-position: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
-.sectionC__form {
-  background-color: black;
-  width: 280px;
-  height: 300px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 30px;
-  padding: 20px;
-  border-radius: 20px;
+.main__name-heading {
+  position: absolute;
+  font-size: 36px;
+  right: 30px;
+  top: 170px;
+  font-weight: bold;
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  -webkit-box-shadow: 1px 1px 1px 1px;
-          box-shadow: 1px 1px 1px 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   color: #F0FFFC;
 }
 
-.sectionC .inputbox {
-  width: 200px;
+.main__trainee-software-heading {
+  position: absolute;
+  font-size: 36px;
+  right: 30px;
+  top: 220px;
+  font-weight: bold;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #F0FFFC;
 }
 
-.sectionC button:hover {
-  cursor: pointer;
+.main__developer {
+  position: absolute;
+  font-size: 36px;
+  right: 30px;
+  top: 270px;
+  font-weight: bold;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #F0FFFC;
 }
 
-.sectionC .contact-icons {
-  font-size: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-}
-
-.sectionC .contact-icons:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: pointer;
-}
-
-.sectionC #linkedin-img:visited {
-  color: black;
+@media screen and (min-width: 768px) {
+  .main__name-heading {
+    font-size: 50px;
+  }
+  .main__trainee-software-heading {
+    font-size: 50px;
+  }
+  .main__developer {
+    font-size: 50px;
+  }
+  .sectionC {
+    min-height: 630px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sectionC #mugshot {
+    display: none;
+  }
+  .sectionC__form {
+    background-color: black;
+    width: 280px;
+    height: 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    -webkit-box-shadow: 1px 1px 1px 1px;
+            box-shadow: 1px 1px 1px 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #F0FFFC;
+  }
+  .sectionC .inputbox {
+    width: 200px;
+  }
+  .sectionC button:hover {
+    cursor: pointer;
+  }
+  .sectionC .contact-icons {
+    font-size: 50px;
+    gap: 30px;
+  }
+  .sectionC .contact-icons:hover {
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+    cursor: pointer;
+  }
+  .sectionC #linkedin-img:visited {
+    color: black;
+  }
 }
 
 @media screen and (min-width: 1048px) {
@@ -411,9 +513,11 @@
   }
   .main__trainee-software-heading {
     font-size: 60px;
+    top: 230px;
   }
   .main__developer {
     font-size: 60px;
+    top: 290px;
   }
   .sectionA__main {
     display: -webkit-box;
@@ -442,9 +546,6 @@
   .sectionA #techstack-header {
     font-size: 40px;
   }
-  .sectionB__navmenu {
-    display: none;
-  }
   .sectionB__projects {
     display: -ms-grid;
     display: grid;
@@ -452,9 +553,6 @@
         grid-template-rows: 1fr 1fr 1fr;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-  }
-  .sectionC__navmenu {
-    display: none;
   }
   .sectionC #mugshot {
     display: -webkit-box;
