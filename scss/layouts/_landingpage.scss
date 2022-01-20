@@ -21,6 +21,9 @@
     font-weight: bold;
     font-family: $primary-font;
     color: $primary-color;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 1s;
   }
 
   &__traineesoftware-heading {
