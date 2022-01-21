@@ -6,6 +6,7 @@
   font-family: $primary-font;
   color: $primary-color;
   font-size: 36px;
+  right: 30px;
 }
 
 .main {
@@ -23,8 +24,6 @@
 
   &__name-heading {
     @include landingpage-headers();
-    font-size: 36px;
-    right: 30px;
     top: 170px;
     transition-property: font-size;
     transition-duration: 1s;
@@ -33,15 +32,11 @@
 
   &__traineesoftware-heading {
     @include landingpage-headers();
-    font-size: 36px;
-    right: 30px;
     top: 220px;
   }
 
   &__developer {
     @include landingpage-headers();
-    font-size: 36px;
-    right: 30px;
     top: 270px;
   }
 }
