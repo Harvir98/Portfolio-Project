@@ -49,9 +49,9 @@
         <div class="sectionA__nav">
           <div id="about" class="sectionA__navabout">ABOUT.</div>
           <div class="sectionA__nav-links">
-            <a href="#"><h2 class="sectionA__nav-items">ABOUT/SKILLS</h2></a>
-            <a href="#"><h2 class="sectionA__nav-items">PROJECTS</h2></a>
-            <a href="#"><h2 class="sectionA__nav-items">CONTACT</h2></a>
+            <a href="#about"><h2 class="sectionA__nav-items">ABOUT/SKILLS</h2></a>
+            <a href="#projects"><h2 class="sectionA__nav-items">PROJECTS</h2></a>
+            <a href="#contact"><h2 class="sectionA__nav-items">CONTACT</h2></a>
           </div>
           <div class=sectionA__menu-icon><i class="fas fa-bars sectionA__navmenu"></i></div>
         </div>
@@ -115,9 +115,9 @@
         <div class="sectionB__nav">
           <div id="projects" class="sectionB__navabout">PROJECTS.</div>
           <div class="sectionA__nav-links">
-            <a href="#" class="sectionA__nav-items">ABOUT/SKILLS</a>
-            <a href="#" class="sectionA__nav-items">PROJECTS</a>
-            <a href="#" class="sectionA__nav-items">CONTACT</a>
+            <a href="#about" class="sectionA__nav-items">ABOUT/SKILLS</a>
+            <a href="#projects" class="sectionA__nav-items">PROJECTS</a>
+            <a href="#contact" class="sectionA__nav-items">CONTACT</a>
           </div>
           <div class=sectionB__menu-icon><i class="fas fa-bars sectionB__navmenu"></i></div>
         </div>
@@ -185,35 +185,36 @@
         <div class="sectionC__nav">
           <div id="contact" class="sectionC__navabout">CONTACT.</div>
           <div class="sectionA__nav-links">
-            <a href="#" class="sectionA__nav-items">ABOUT/SKILLS</a>
-            <a href="#" class="sectionA__nav-items">PROJECTS</a>
-            <a href="#" class="sectionA__nav-items">CONTACT</a>
+            <a href="#about" class="sectionA__nav-items">ABOUT/SKILLS</a>
+            <a href="#projects" class="sectionA__nav-items">PROJECTS</a>
+            <a href="#contact" class="sectionA__nav-items">CONTACT</a>
           </div>
           <div class=sectionC__menu-icon><i class="fas fa-bars sectionC__navmenu"></i></div>
         </div>
-        <img src="./images/headshot.png" alt="headshot" id="mugshot" />
+        <!-- <img src="./images/headshot.png" alt="headshot" id="mugshot" /> -->
         <!-- Contact Page Main Section -->
-        <div>
+        <div class="contact-main">
+          <img src="./images/headshot.png" alt="headshot" id="mugshot" />
           <form class="sectionC__form">
-            <div class="sectionC__cf">
+            <div>
               <label for="firstName">First Name:</label>
             </div>
             <div>
               <input type="text" name="text" id="firstName" class="inputbox" />
             </div>
-            <div class="sectionC__cf">
+            <div>
               <label for="lastName">Last Name:</label>
             </div>
             <div>
               <input type="text" name="text" id="lastName" class="inputbox" />
             </div>
-            <div class="sectionC__cf">
+            <div>
               <label for="email">Email:</label>
             </div>
             <div>
               <input type="text" class="inputbox" />
             </div>
-            <div class="sectionC__cf">
+            <div>
               <label for="message">Message:</label>
             </div>
             <div>
@@ -224,11 +225,12 @@
             </div>
           </form>
         </div>
-        <div class="contact-icons">
-          <i class="fab fa-github"></i>
-          <a href="https://www.linkedin.com/in/harvir-gill" target="_blank"
-            ><i class="fab fa-linkedin" id="linkedin-img"></i
-          ></a>
+          <div class="contact-icons">
+            <i class="fab fa-github"></i>
+            <a href="https://www.linkedin.com/in/harvir-gill" target="_blank"
+              ><i class="fab fa-linkedin" id="linkedin-img"></i
+            ></a>
+          </div>
         </div>
       </section>
     </main>
