@@ -350,15 +350,6 @@
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.sectionA__mainimg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  float: right;
-  height: 120px;
-  width: 120px;
-}
-
 .sectionA__TSTitle {
   margin: 15px;
   font-size: 20px;
