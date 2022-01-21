@@ -322,6 +322,8 @@
     border-radius: 50%;
     -webkit-box-shadow: 10px 10px 30px black;
             box-shadow: 10px 10px 30px black;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
   }
   .sectionC .contact-main {
     display: -ms-grid;
