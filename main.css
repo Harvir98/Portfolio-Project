@@ -117,7 +117,7 @@
     margin: 0 30px;
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: #F0FFFC;
   }
   .main .nav a {
     text-decoration: none;
@@ -138,7 +138,7 @@
     margin-right: 30px;
     padding-top: 20px;
     gap: 60px;
-    color: white;
+    color: #F0FFFC;
   }
   .sectionA__nav-items {
     text-decoration: none;
