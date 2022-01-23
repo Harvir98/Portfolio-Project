@@ -1,3 +1,8 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .main__menu {
   position: absolute;
   font-size: 30px;
@@ -167,6 +172,16 @@
   }
 }
 
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .sectionB__projects {
   margin-top: 30px;
   display: -webkit-box;
@@ -213,6 +228,11 @@
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
 .sectionC {
@@ -337,6 +357,11 @@
     -ms-grid-rows: 400px;
         grid-template-rows: 400px;
   }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
 .sectionA {
@@ -473,6 +498,11 @@
   }
 }
 
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .main {
   min-height: 650px;
 }
@@ -490,7 +520,6 @@
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #F0FFFC;
   font-size: 36px;
-  font-size: 36px;
   right: 30px;
   top: 170px;
   -webkit-transition-property: font-size;
@@ -507,7 +536,6 @@
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #F0FFFC;
   font-size: 36px;
-  font-size: 36px;
   right: 30px;
   top: 220px;
 }
@@ -517,7 +545,6 @@
   font-weight: bold;
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #F0FFFC;
-  font-size: 36px;
   font-size: 36px;
   right: 30px;
   top: 270px;
@@ -547,10 +574,5 @@
     font-size: 60px;
     top: 290px;
   }
-}
-
-* {
-  padding: 0px;
-  margin: 0px;
 }
 /*# sourceMappingURL=main.css.map */
