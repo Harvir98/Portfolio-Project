@@ -13,6 +13,7 @@
     margin: 25px;
     font-size: 17px;
     font-family: $primary-font;
+    color: $third-color;
   }
 
   &__TSTitle {
@@ -101,7 +102,7 @@
 
     &__main {
       display: flex;
-      font-size: 25px;
+      font-size: 21px;
     }
 
     &__main-bio {
@@ -119,7 +120,7 @@
     }
 
     #techstack-header {
-      font-size: 40px;
+      font-size: 35px;
     }
   }
 }
